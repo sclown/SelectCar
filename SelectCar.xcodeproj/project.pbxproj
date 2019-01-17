@@ -8,11 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		5712114921EE2A8600B04188 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712114821EE2A8600B04188 /* AppDelegate.swift */; };
-		5712114B21EE2A8600B04188 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712114A21EE2A8600B04188 /* ViewController.swift */; };
-		5712114E21EE2A8600B04188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5712114C21EE2A8600B04188 /* Main.storyboard */; };
+		5712114B21EE2A8600B04188 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712114A21EE2A8600B04188 /* SelectionViewController.swift */; };
 		5712115021EE2A8B00B04188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5712114F21EE2A8B00B04188 /* Assets.xcassets */; };
 		5712115321EE2A8B00B04188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5712115121EE2A8B00B04188 /* LaunchScreen.storyboard */; };
-		5712115E21EE2A8B00B04188 /* SelectCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712115D21EE2A8B00B04188 /* SelectCarTests.swift */; };
+		5712116921EE6B7900B04188 /* BaseInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712116821EE6B7900B04188 /* BaseInfoService.swift */; };
+		5712116B21EE6F3200B04188 /* InfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712116A21EE6F3200B04188 /* InfoService.swift */; };
+		5712116F21EF017700B04188 /* SelectionViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712116E21EF017700B04188 /* SelectionViewModelImpl.swift */; };
+		5712117121EF859A00B04188 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712117021EF859A00B04188 /* SelectionCell.swift */; };
+		5712117321EFD3EB00B04188 /* CarSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712117221EFD3EB00B04188 /* CarSelection.swift */; };
+		5712117521EFE08E00B04188 /* ManufacturerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712117421EFE08E00B04188 /* ManufacturerService.swift */; };
+		5712117721EFE1B900B04188 /* ModelsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712117621EFE1B900B04188 /* ModelsService.swift */; };
+		5712117921EFFCDD00B04188 /* BaseInfoServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712117821EFFCDD00B04188 /* BaseInfoServiceTest.swift */; };
+		5712117B21F0746D00B04188 /* NetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712117A21F0746D00B04188 /* NetworkMock.swift */; };
+		5712117D21F0761700B04188 /* fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712117C21F0761700B04188 /* fixtures.swift */; };
+		5712117F21F0864400B04188 /* ManufacturersServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712117E21F0864400B04188 /* ManufacturersServiceTest.swift */; };
+		5712118121F0879000B04188 /* ModelsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712118021F0879000B04188 /* ModelsServiceTest.swift */; };
+		5712118321F0888B00B04188 /* SelectionViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712118221F0888B00B04188 /* SelectionViewModelTest.swift */; };
+		5712118521F091D400B04188 /* AppMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712118421F091D400B04188 /* AppMocks.swift */; };
+		5712118921F0A5ED00B04188 /* SelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712118821F0A5ED00B04188 /* SelectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +41,27 @@
 /* Begin PBXFileReference section */
 		5712114521EE2A8600B04188 /* SelectCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5712114821EE2A8600B04188 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5712114A21EE2A8600B04188 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5712114D21EE2A8600B04188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5712114A21EE2A8600B04188 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		5712114F21EE2A8B00B04188 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5712115221EE2A8B00B04188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5712115421EE2A8B00B04188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5712115921EE2A8B00B04188 /* SelectCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5712115D21EE2A8B00B04188 /* SelectCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCarTests.swift; sourceTree = "<group>"; };
 		5712115F21EE2A8B00B04188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5712116821EE6B7900B04188 /* BaseInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoService.swift; sourceTree = "<group>"; };
+		5712116A21EE6F3200B04188 /* InfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoService.swift; sourceTree = "<group>"; };
+		5712116E21EF017700B04188 /* SelectionViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewModelImpl.swift; sourceTree = "<group>"; };
+		5712117021EF859A00B04188 /* SelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
+		5712117221EFD3EB00B04188 /* CarSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelection.swift; sourceTree = "<group>"; };
+		5712117421EFE08E00B04188 /* ManufacturerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturerService.swift; sourceTree = "<group>"; };
+		5712117621EFE1B900B04188 /* ModelsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsService.swift; sourceTree = "<group>"; };
+		5712117821EFFCDD00B04188 /* BaseInfoServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoServiceTest.swift; sourceTree = "<group>"; };
+		5712117A21F0746D00B04188 /* NetworkMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMock.swift; sourceTree = "<group>"; };
+		5712117C21F0761700B04188 /* fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fixtures.swift; sourceTree = "<group>"; };
+		5712117E21F0864400B04188 /* ManufacturersServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturersServiceTest.swift; sourceTree = "<group>"; };
+		5712118021F0879000B04188 /* ModelsServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsServiceTest.swift; sourceTree = "<group>"; };
+		5712118221F0888B00B04188 /* SelectionViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewModelTest.swift; sourceTree = "<group>"; };
+		5712118421F091D400B04188 /* AppMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMocks.swift; sourceTree = "<group>"; };
+		5712118821F0A5ED00B04188 /* SelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +104,15 @@
 			isa = PBXGroup;
 			children = (
 				5712114821EE2A8600B04188 /* AppDelegate.swift */,
-				5712114A21EE2A8600B04188 /* ViewController.swift */,
-				5712114C21EE2A8600B04188 /* Main.storyboard */,
+				5712117221EFD3EB00B04188 /* CarSelection.swift */,
+				5712116821EE6B7900B04188 /* BaseInfoService.swift */,
+				5712116A21EE6F3200B04188 /* InfoService.swift */,
+				5712117421EFE08E00B04188 /* ManufacturerService.swift */,
+				5712117621EFE1B900B04188 /* ModelsService.swift */,
+				5712117021EF859A00B04188 /* SelectionCell.swift */,
+				5712114A21EE2A8600B04188 /* SelectionViewController.swift */,
+				5712118821F0A5ED00B04188 /* SelectionViewModel.swift */,
+				5712116E21EF017700B04188 /* SelectionViewModelImpl.swift */,
 				5712114F21EE2A8B00B04188 /* Assets.xcassets */,
 				5712115121EE2A8B00B04188 /* LaunchScreen.storyboard */,
 				5712115421EE2A8B00B04188 /* Info.plist */,
@@ -90,7 +123,13 @@
 		5712115C21EE2A8B00B04188 /* SelectCarTests */ = {
 			isa = PBXGroup;
 			children = (
-				5712115D21EE2A8B00B04188 /* SelectCarTests.swift */,
+				5712117821EFFCDD00B04188 /* BaseInfoServiceTest.swift */,
+				5712118221F0888B00B04188 /* SelectionViewModelTest.swift */,
+				5712118421F091D400B04188 /* AppMocks.swift */,
+				5712117E21F0864400B04188 /* ManufacturersServiceTest.swift */,
+				5712118021F0879000B04188 /* ModelsServiceTest.swift */,
+				5712117C21F0761700B04188 /* fixtures.swift */,
+				5712117A21F0746D00B04188 /* NetworkMock.swift */,
 				5712115F21EE2A8B00B04188 /* Info.plist */,
 			);
 			path = SelectCarTests;
@@ -179,7 +218,6 @@
 			files = (
 				5712115321EE2A8B00B04188 /* LaunchScreen.storyboard in Resources */,
 				5712115021EE2A8B00B04188 /* Assets.xcassets in Resources */,
-				5712114E21EE2A8600B04188 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +235,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5712114B21EE2A8600B04188 /* ViewController.swift in Sources */,
+				5712116921EE6B7900B04188 /* BaseInfoService.swift in Sources */,
+				5712114B21EE2A8600B04188 /* SelectionViewController.swift in Sources */,
+				5712117121EF859A00B04188 /* SelectionCell.swift in Sources */,
+				5712116F21EF017700B04188 /* SelectionViewModelImpl.swift in Sources */,
 				5712114921EE2A8600B04188 /* AppDelegate.swift in Sources */,
+				5712117321EFD3EB00B04188 /* CarSelection.swift in Sources */,
+				5712118921F0A5ED00B04188 /* SelectionViewModel.swift in Sources */,
+				5712117721EFE1B900B04188 /* ModelsService.swift in Sources */,
+				5712117521EFE08E00B04188 /* ManufacturerService.swift in Sources */,
+				5712116B21EE6F3200B04188 /* InfoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5712115E21EE2A8B00B04188 /* SelectCarTests.swift in Sources */,
+				5712117921EFFCDD00B04188 /* BaseInfoServiceTest.swift in Sources */,
+				5712118121F0879000B04188 /* ModelsServiceTest.swift in Sources */,
+				5712118321F0888B00B04188 /* SelectionViewModelTest.swift in Sources */,
+				5712117B21F0746D00B04188 /* NetworkMock.swift in Sources */,
+				5712117F21F0864400B04188 /* ManufacturersServiceTest.swift in Sources */,
+				5712117D21F0761700B04188 /* fixtures.swift in Sources */,
+				5712118521F091D400B04188 /* AppMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +273,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5712114C21EE2A8600B04188 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5712114D21EE2A8600B04188 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5712115121EE2A8B00B04188 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
